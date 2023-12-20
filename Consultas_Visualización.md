@@ -26,14 +26,14 @@ ORDER BY SUM(capacity) DES;
 <details>
 <summary>Ver gráfico de barras</summary>
 
-![grafico_barras_1](https://github.com/guilleldas/Proyecto_Visualizacion_Python/assets/145810000/48c927f7-7549-4d80-af0e-73a68bfd6b29)
+![grafico_barras_1](https://github.com/guilleldas/Proyecto_Visualizacion_Python/assets/145810000/33597153-c8dd-489c-b20f-a942040d198f)
 
 </details>
 
 <details>
 <summary>Ver gráfico de torta</summary>
 
-![pie_chart_1](https://github.com/guilleldas/Proyecto_Visualizacion_Python/assets/145810000/6d488691-3202-4770-ae5c-ab6d6d2633a0)
+![pie_chart_1](https://github.com/guilleldas/Proyecto_Visualizacion_Python/assets/145810000/188f3de7-9ee5-4a22-a000-c13f6480eb76)
 
 </details>
 
@@ -64,3 +64,23 @@ ORDER BY SUM(capacity) DESC;
 |Bolivia  |90,000   |
 
 </details>
+
+<details>
+<summary>Ver TreeMap</summary>
+
+![treemap_1](https://github.com/guilleldas/Proyecto_Visualizacion_Python/assets/145810000/5fe6a881-5a48-41c6-a2ab-fafcd0d49bb7)
+
+</details>
+
+### Consulta 3:
+
+```sql
+SELECT country AS País, 
+SUM(capacity) AS Capacidad, 
+AVG(population) AS Poblacion 
+FROM estadios_tres_confederaciones 
+GROUP BY country 
+ORDER BY AVG(population) DESC;
+```
+
+
